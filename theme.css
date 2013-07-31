@@ -1,4 +1,28 @@
 head 
 {
-	bgcolor:#002933;
+	background-color:#002933;
 }
+body
+{
+	background-color:#002933;
+}
+#header1 
+{
+	display:block;
+	width: 100px;
+	height: 20px;
+	background: images/
+}
+table {
+  width:100%;
+  margin: 10px auto;
+  border: 10px;
+}
+p
+{
+	background-color:#000fff;
+}
+td
+{
+	text-align: center;
+} 
