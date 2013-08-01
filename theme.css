@@ -1,10 +1,10 @@
-head 
-{
-	background-color:#002933;
-}
+
 body
 {
-	background-color:#002933;
+
+	background-image:url('images/blackbackground.jpg');
+	background-repeat:no-repeat;
+	background-size:100% 100%;
 }
 #header1 
 {
@@ -26,3 +26,12 @@ td
 {
 	text-align: center;
 } 
+footer p 
+{
+	background-color:##323232;
+}
+#middle
+{
+
+}
+#footer
