@@ -28,10 +28,10 @@ td
 } 
 footer p 
 {
-	background-color:##323232;
+	background-color:#323232;
 }
-#middle
-{
 
+#textbody
+{
+	font-color:#999999;
 }
-#footer
