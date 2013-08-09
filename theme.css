@@ -1,4 +1,3 @@
-
 body
 {
 
@@ -18,10 +17,6 @@ table {
   margin: 10px auto;
   border: 10px;
 }
-p
-{
-	
-}
 td
 {
 	text-align: center;
@@ -34,4 +29,19 @@ footer p
 #textbody
 {
 	font-color:#999999;
+}
+#subtitle 
+{
+	text-shadow: 4px 4px 4px #aaa
+}
+#undertext
+{
+	font-family: ubuntu;
+	color: #F2F2F2;
+}
+#navimg
+{
+	z-index: 10;
+	width: 14%;
+	height: 11%;
 }
