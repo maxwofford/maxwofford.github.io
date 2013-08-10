@@ -21,14 +21,20 @@ td
 {
 	text-align: center;
 } 
-footer p 
+footer 
 {
-	background-color:#323232;
-}
+	color: #425959;
+	text-shadow: 0px 0px 4px #314242
 
+}
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+    color: #425959;
+}
 #textbody
 {
-	font-color:#999999;
+	font-color: #999999;
 }
 #subtitle 
 {
