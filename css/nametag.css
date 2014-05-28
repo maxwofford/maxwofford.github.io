@@ -1,46 +1,27 @@
-body {
-  background: url() no-repeat center center fixed; /*add a background later*/
-  height: 100%;
-  padding-top:60px;
+html {
+  min-width: 640px;
 }
-
-.sticker {
-	position: relative;
-	.box-shadow(~"0 1px 2px rgba(0,0,0,.8), inset 0 0 2px rgba(255,255,255,.75)"); 
-	.border-radius(10px);
-	max-width: 450px;
-	background: #f80000;
-	padding: 25px 8px 20px 8px;
-	.background-image(~"linear-gradient(bottom, rgba(0,0,0,.2) 0%, rgba(255,255,255,.0) 100%)");
-	display: block;
+.tag {
   text-align: center;
+  margin: 0;
+  font-family: helvetica;
+  max-width: 50em;
 }
-
-.sticker header {
+.tag-title{
+  border: red 3px solid;
+  padding: 1em;
+  border-top-right-radius: 2em;
+  border-top-left-radius: 2em;
+  background-color: red;
   color: white;
-  margin: -40px;
-  font-family: 'Source Sans Pro', sans-serif;
-  padding-top: 5px;
-  text-rendering: optimizelegibility;
+  margin: 0;
+  font-size: 200%;
 }
-
-.sticker header h1 {
-  font-size: 4.5em;
-  line-height: 40px;
-  letter-spacing: 10px;
-}
-
-.sticker header h1 span {
-  font-size: 0.4em;
-  letter-spacing: 3px;
-}
-
-#whitespace {
-  background: white;
-}
-
-#whitespace .name {
-  font-family: pacifico, sans-serif;
-  width: 100%;
-  color: black;
+.tag-contents {
+  border: red 3px solid;
+  border-bottom-right-radius: 2em;
+  border-bottom-left-radius: 2em;
+  margin: 0;
+  font-size: 2em;
+  min-height: 5em;
 }
