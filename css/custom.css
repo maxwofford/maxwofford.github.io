@@ -1,4 +1,13 @@
 body{
-	background-image: url(../img/grid.png);
-	background-repeat: repeat;
+  background-image: url(../img/grid.png);
+  background-repeat: repeat;
+}
+.rotate {
+  -webkit-transform: rotate(352deg);
+  -moz-transform: rotate(352deg);
+  -o-transform: rotate(352deg);
+  writing-mode: lr-tb;
+}
+.banner {
+  text-align: center;
 }
