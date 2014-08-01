@@ -1,7 +1,17 @@
-body{
+body {
+  width: 100%;
   background-image: url(../img/grid.png);
   background-repeat: repeat;
-  background-attachment: fixed;
+}
+.panel { /*This class will be used for templating the site*/
+  border: 1px solid;
+  color: #eee;
+  background-color: rgba(0,0,0,0.2);
+}
+.level { /*This class will be used for templating the site*/
+  width: 75%;
+  margin-right: auto;
+  margin-left: auto;
 }
 .rotate {
   -webkit-transform: rotate(355deg);
@@ -12,6 +22,7 @@ body{
 .banner {
   text-align: center;
   margin-top: 3em;
+  margin-bottom: 6em; /* TODO: Fix this so "What do I do" is at the bottom of any screen */
   text-shadow: #284D43 0px -1px 1px;
   color: #222;
   font: 80px;
@@ -22,22 +33,17 @@ body{
   -webkit-text-fill-color: transparent;
 }
 .banner h1 {
-  font-size: 72px;
+  font-size: 7rem;
 }
 .banner h3 {
-  font-size: 48px;
+  font-size: 4rem;
 }
-.spinning {
-  -webkit-transform: rotate(100deg);
-  -moz-transform: rotate(100deg);
-  -o-transform: rotate(100deg);
-  color: green;
-  writing-mode: lr-tb;
+.fixed{
+    position: fixed;
 }
-.test {
-  -webkit-transform: rotate(100deg);
-  -moz-transform: rotate(100deg);
-  -o-transform: rotate(100deg);
-  color: green;
-  writing-mode: lr-tb;
+.level {
+  width: 80%;
+}
+.level h2{
+  text-align: center;
 }
