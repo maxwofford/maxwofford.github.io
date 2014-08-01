@@ -77,31 +77,6 @@ body {
   max-width: 100%;
   height: 100%;
 }
-.fancy {
-  color: rgba(255,255,255,.6);
-  background-color: #6dcff6;
-  font-size: 3em;
-  padding: 1em;
-  -webkit-border-radius: .9em;
-  -moz-border-radius: .9em;
-  border-radius: .9em;
-  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.75), inset 1px 0 rgba(255,255,255,.65), inset 0 0 25px rgba(255,255,190,.41);
-  -moz-box-shadow: 0 1px 3px rgba(0,0,0,.75), inset 1px 0 rgba(255,255,255,.65), inset 0 0 25px rgba(255,255,190,.41);
-  box-shadow: 0 1px 3px rgba(0,0,0,.75), inset 1px 0 rgba(255,255,255,.65), inset 0 0 25px rgba(255,255,190,.41);
-  border: solid 1px #07a1d3;
-  background-image: -webkit-linear-gradient(bottom, rgba(0,126,255,.74), rgba(0,255,234,.74));
-  background-image: -moz-linear-gradient(bottom, rgba(0,126,255,.74), rgba(0,255,234,.74));
-  background-image: -o-linear-gradient(bottom, rgba(0,126,255,.74), rgba(0,255,234,.74));
-  background-image: linear-gradient(to top, rgba(0,126,255,.74), rgba(0,255,234,.74));
-}
-.fancy:hover {
-  text-decoration: none;
-  color: rgba(255,255,255,.8);
-  background-color: #fff;
-}
-.fancy:active {
-  background-color: #1c96b0;
-}
 .level {
   background: linear-gradient(45deg, #020031 0%,#6d3353 100%);
 }
