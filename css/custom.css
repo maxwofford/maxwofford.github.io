@@ -1,6 +1,7 @@
 body{
   background-image: url(../img/grid.png);
   background-repeat: repeat;
+  background-attachment: fixed;
 }
 .rotate {
   -webkit-transform: rotate(355deg);
