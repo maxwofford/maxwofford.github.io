@@ -18,6 +18,9 @@ body {
   -moz-transform: rotate(355deg);
   -o-transform: rotate(355deg);
   writing-mode: lr-tb;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .banner {
   text-align: center;
@@ -47,15 +50,11 @@ body {
 .level h2{
   text-align: center;
 }
-#1.panel.level{
-  border:5px red solid;
-  min-height: 1000px;
-}
 .level {
   background: #DBD6D3;
- height: 364px;
- background: -moz-radial-gradient(50% 0% 0deg,circle farthest-corner,#373239,#232028);
- background: -webkit-gradient(radial,50% 59,500,50% 0,40,from(#232028),to(#373239));
+  height: 364px;
+  background: -moz-radial-gradient(50% 0% 0deg,circle farthest-corner,#373239,#232028);
+  background: -webkit-gradient(radial,50% 59,500,50% 0,40,from(#232028),to(#373239));
 }
 .mood-lighting {
   background: -moz-linear-gradient(top, rgba(24,22,22,0) 0%, rgba(41,20,65,1) 58%, rgba(43,20,70,1) 65%, rgba(43,20,70,1) 100%); /* FF3.6+ */
@@ -65,4 +64,36 @@ body {
   background: -ms-linear-gradient(top, rgba(24,22,22,0) 0%,rgba(41,20,65,1) 58%,rgba(43,20,70,1) 65%,rgba(43,20,70,1) 100%); /* IE10+ */
   background: linear-gradient(to bottom, rgba(24,22,22,0) 0%,rgba(41,20,65,1) 58%,rgba(43,20,70,1) 65%,rgba(43,20,70,1) 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00181616', endColorstr='#2b1446',GradientType=0 ); /* IE6-9 */
+}
+.container .work {
+  width: 25%;
+}
+.work img {
+  max-width: 100%;
+  height: 100%;
+}
+.fancy {
+  color: rgba(255,255,255,.6);
+  background-color: #6dcff6;
+  font-size: 3em;
+  padding: 1em;
+  -webkit-border-radius: .9em;
+  -moz-border-radius: .9em;
+  border-radius: .9em;
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.75), inset 1px 0 rgba(255,255,255,.65), inset 0 0 25px rgba(255,255,190,.41);
+  -moz-box-shadow: 0 1px 3px rgba(0,0,0,.75), inset 1px 0 rgba(255,255,255,.65), inset 0 0 25px rgba(255,255,190,.41);
+  box-shadow: 0 1px 3px rgba(0,0,0,.75), inset 1px 0 rgba(255,255,255,.65), inset 0 0 25px rgba(255,255,190,.41);
+  border: solid 1px #07a1d3;
+  background-image: -webkit-linear-gradient(bottom, rgba(0,126,255,.74), rgba(0,255,234,.74));
+  background-image: -moz-linear-gradient(bottom, rgba(0,126,255,.74), rgba(0,255,234,.74));
+  background-image: -o-linear-gradient(bottom, rgba(0,126,255,.74), rgba(0,255,234,.74));
+  background-image: linear-gradient(to top, rgba(0,126,255,.74), rgba(0,255,234,.74));
+}
+.fancy:hover {
+  text-decoration: none;
+  color: rgba(255,255,255,.8);
+  background-color: #fff;
+}
+.fancy:active {
+  background-color: #1c96b0;
 }

@@ -5,6 +5,7 @@
 
   <!--Resources-->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/animate.min.css">
   <link rel="stylesheet" type="text/css" href="css/custom.css">
   <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script><!-- For local development -->
   <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
@@ -18,21 +19,35 @@
         <a href="#"><img class="social" src="img/icon/Skype.png"></a><br>
         <a href="#"><img class="social" src="img/icon/Twitter.png"></a><br>
     </div>
-<div class="mood-lighting">
     <!--Banner-->
-    <div class="banner rotate" id="spinning">
-        <!--<img src="img/Construction-line.png" class="img-responsive center-block" alt="Site being redesign">-->
+    <div class="banner animated bounceInUp" id="spinning">
+            <div class="rotate">
+            <!--<img src="img/Construction-line.png" class="img-responsive center-block" alt="Site being redesign">-->
      
-        <h1>Site Under Construction</h1>
-        <h3>(*Please pardon the dust!)</h3>
-        <small>Rotation: <span id="test">test</span></small>
+            <h1>Site Under Construction</h1>
+            <h3>(*Please pardon the dust!)</h3>
+            <small>Rotation: <span id="test">test</span></small>
+        </div>
     </div>
+<div class="mood-lighting">
         <div class="panel ">
             <h1>What do I do?</h1>
+            <table>
+                <tr>
+                    <td><a href="#"><img src="img/placeholder.jpg"></a></td>
+                    <td><a href="#"><img src="img/placeholder.jpg"></a></td>
+                </tr>
+            </table>
+            <table .>
+                <tr>
+                    <td><a href="#"><img src="img/placeholder.jpg"></a></td>
+                    <td><a href="#"><img src="img/placeholder.jpg"></a></td>
+                </tr>
+            </table>
         </div>
 
     <div class="panel contaner-fluid">
-        <div class="panel level" id="!">
+        <div class="panel level" id="1">
             <h2>Something I can do</h2> <!--Likely education-->
             <div class="panel">
             </div>
@@ -48,7 +63,7 @@
             </div>
         </div>
         <div class="panel level" id="4">
-            <h2>I'm just full of myself</h2> <!-- Contact me-->
+            <a class="fancy" href="#">Contact me!</a> <!-- Contact me-->
             <div class="panel">
             </div>
         </div>

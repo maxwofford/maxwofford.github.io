@@ -7,3 +7,11 @@
 		$('.social').css( "-moz-transform", "rotate(" + rotation + "deg)" );
 		$('.social').css( "-o-transform", "rotate(" + rotation + "deg)" );		
 	});
+
+//Animations 
+
+/* Example use of animate.css with jquery
+$( document ).ready(function(e){
+	$('SOMESELECTORHERE').addClass('animated ANIMATE.CSS-CLASS');
+});
+*/
