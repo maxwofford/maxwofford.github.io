@@ -3,13 +3,19 @@ body{
   background-repeat: repeat;
 }
 .rotate {
-  -webkit-transform: rotate(352deg);
-  -moz-transform: rotate(352deg);
-  -o-transform: rotate(352deg);
+  -webkit-transform: rotate(355deg);
+  -moz-transform: rotate(355deg);
+  -o-transform: rotate(355deg);
   writing-mode: lr-tb;
 }
 .banner {
   text-align: center;
+  margin-top: 3em;
+  text-shadow: #284D43 0px -1px 1px;
+  color: #222;
+  font: 80px;
+}
+.gradient { 
   background: -webkit-linear-gradient(#eee, #333);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
