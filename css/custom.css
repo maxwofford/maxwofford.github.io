@@ -27,3 +27,17 @@ body{
 .banner h3 {
   font-size: 48px;
 }
+.spinning {
+  -webkit-transform: rotate(100deg);
+  -moz-transform: rotate(100deg);
+  -o-transform: rotate(100deg);
+  color: green;
+  writing-mode: lr-tb;
+}
+.test {
+  -webkit-transform: rotate(100deg);
+  -moz-transform: rotate(100deg);
+  -o-transform: rotate(100deg);
+  color: green;
+  writing-mode: lr-tb;
+}
