@@ -3,7 +3,7 @@
 		var rotation = $(document).scrollTop(); 
 		//Set span innerHTML to rolation
 		$('#test').text(rotation);
-		$('#spinning').css( "-webkit-transform", "rotate(" + rotation + "deg)" );
-		$('#spinning').css( "-moz-transform", "rotate(" + rotation + "deg)" );
-		$('#spinning').css( "-o-transform", "rotate(" + rotation + "deg)" );		
+		$('.social').css( "-webkit-transform", "rotate(" + rotation + "deg)" );
+		$('.social').css( "-moz-transform", "rotate(" + rotation + "deg)" );
+		$('.social').css( "-o-transform", "rotate(" + rotation + "deg)" );		
 	});

@@ -47,3 +47,22 @@ body {
 .level h2{
   text-align: center;
 }
+#1.panel.level{
+  border:5px red solid;
+  min-height: 1000px;
+}
+.level {
+  background: #DBD6D3;
+ height: 364px;
+ background: -moz-radial-gradient(50% 0% 0deg,circle farthest-corner,#373239,#232028);
+ background: -webkit-gradient(radial,50% 59,500,50% 0,40,from(#232028),to(#373239));
+}
+.mood-lighting {
+  background: -moz-linear-gradient(top, rgba(24,22,22,0) 0%, rgba(41,20,65,1) 58%, rgba(43,20,70,1) 65%, rgba(43,20,70,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(24,22,22,0)), color-stop(58%,rgba(41,20,65,1)), color-stop(65%,rgba(43,20,70,1)), color-stop(100%,rgba(43,20,70,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(24,22,22,0) 0%,rgba(41,20,65,1) 58%,rgba(43,20,70,1) 65%,rgba(43,20,70,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(24,22,22,0) 0%,rgba(41,20,65,1) 58%,rgba(43,20,70,1) 65%,rgba(43,20,70,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(24,22,22,0) 0%,rgba(41,20,65,1) 58%,rgba(43,20,70,1) 65%,rgba(43,20,70,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom, rgba(24,22,22,0) 0%,rgba(41,20,65,1) 58%,rgba(43,20,70,1) 65%,rgba(43,20,70,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00181616', endColorstr='#2b1446',GradientType=0 ); /* IE6-9 */
+}
