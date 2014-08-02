@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head>
     <meta >
@@ -9,6 +10,20 @@
     <link rel="stylesheet" type="text/css" href="css/custom.css">
     <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script><!-- For local development -->
     <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <!-- Initialize wow.js settings -->
+    <script type="text/javascript">
+    var wow = new WOW(
+      {
+        boxClass:     'wow',      // animated element css class (default is wow)
+        animateClass: 'animated', // animation css class (default is animated)
+        offset:       100,          // distance to the element when triggering the animation (default is 0)
+        mobile:       true,       // trigger animations on mobile devices (default is true)
+        live:         true        // act on asynchronously loaded content (default is true)
+      }
+    );
+    wow.init();
+    </script>
     <script type="text/javascript" src="js/script.js"></script>
   </head>
   <body>
@@ -48,15 +63,15 @@
           <div class="panel">
             <div class="row">
               <div class="col-md-3 portfolio-item">
-                <a href="#"><img class="img-responsive" src="img/placeholder.jpg" alt=""></a>
+                <a href="#"><img class="img-responsive wow bounceInLeft" src="img/placeholder.jpg" alt=""></a>
               </div>
               <div class="col-md-3 portfolio-item">
-                <a href="#"><img class="img-responsive" src="img/placeholder.jpg" alt=""></a>
+                <a href="#"><img class="img-responsive wow bounceInUp" src="img/placeholder.jpg" alt=""></a>
               </div>
               <div class="col-md-3 portfolio-item">
-                <a href="#"><img class="img-responsive" src="img/placeholder.jpg" alt=""></a>
+                <a href="#"><img class="img-responsive wow bounceInUp" src="img/placeholder.jpg" alt=""></a>
               </div>
-              <div class="col-md-3 portfolio-item">
+              <div class="col-md-3 portfolio-item wow bounceInRight">
                 <a href="#"><img class="img-responsive" src="img/placeholder.jpg" alt=""></a>
               </div>
             </div>
