@@ -1,40 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta >
-    <title>
-      Max Wofford
-    </title><!--Resources-->
+    <title>Max Wofford</title>
+    <!--Resources-->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
-    <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script><!-- For local development -->
-    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <!-- Initialize wow.js settings -->
-    <script type="text/javascript">
-    var wow = new WOW(
-      {
-        boxClass:     'wow',      // animated element css class (default is wow)
-        animateClass: 'animated', // animation css class (default is animated)
-        offset:       100,          // distance to the element when triggering the animation (default is 0)
-        mobile:       true,       // trigger animations on mobile devices (default is true)
-        live:         true        // act on asynchronously loaded content (default is true)
-      }
-    );
-    wow.init();
-    </script>
-    <script type="text/javascript" src="js/script.js"></script>
   </head>
   <body>
     <div class="test"><p><span class="left">Cal</span><span class="middle">l me</span> <span class="right">...</span><br> <span class="left">M</span><span class="middle">a</span><span class="right">x</span></p></div>
     <div class="panel fixed">
-      <!-- TODO: Add GitHub icon -->
-      <a href="#"><img class="social" src="img/icon/Facebook.png"></a><br>
-      <a href="#"><img class="social" src="img/icon/GMail.png"></a><br>
+      <a href="https://github.com/MaxWofford"><img class="social" src="img/icon/GitHub.png"></a><br>
+      <a href="mailto:max.speed.wofford@gmail.com"><img class="social" src="img/icon/GMail.png"></a><br>
       <a href="#"><img class="social" src="img/icon/LinkedIN.png"></a><br>
-      <a href="#"><img class="social" src="img/icon/Skype.png"></a><br>
-      <a href="#"><img class="social" src="img/icon/Twitter.png"></a><br>
+      <a href="#"><img class="social" src="img/icon/Facebook.png"></a><br>
     </div><!--Banner-->
     <div class="banner animated bounceInUp" id="spinning">
       <div class="rotate">
@@ -56,7 +35,7 @@
           What do I do?
         </h1>
       <div class="panel contaner-fluid">
-        <div class="panel level" id="1">
+        <div class="panel level">
           <h2>
             Something I can do
           </h2><!--Likely education-->
@@ -76,35 +55,23 @@
               </div>
             </div>
             <br>
-            <div class="row">
-              <div class="col-md-3 portfolio-item">
-                <a href="#"><img class="img-responsive" src="img/placeholder.jpg" alt=""></a>
-              </div>
-              <div class="col-md-3 portfolio-item">
-                <a href="#"><img class="img-responsive" src="img/placeholder.jpg" alt=""></a>
-              </div>
-              <div class="col-md-3 portfolio-item">
-                <a href="#"><img class="img-responsive" src="img/placeholder.jpg" alt=""></a>
-              </div>
-              <div class="col-md-3 portfolio-item">
-                <a href="#"><img class="img-responsive" src="img/placeholder.jpg" alt=""></a>
-              </div>
-            </div>
           </div>
         </div>
-        <div class="panel level" id="2">
+        <div class="panel level">
           <h2>
             Something else I can do
           </h2><!--What I can do-->
-          <div class="panel"></div>
+          <div class="panel">
+
+          </div>
         </div>
-        <div class="panel level" id="3">
+        <div class="panel level">
           <h2>
             Another thing I can do
           </h2><!--Past Projects-->
           <div class="panel"></div>
         </div>
-        <div class="panel level" id="4"> <!-- Contact me-->
+        <div class="panel level"> <!-- Contact me-->
           <div class="panel"></div>
         </div>
       </div>
@@ -138,5 +105,23 @@
     <footer>
       <small>Designed with ♥ by yours truly.</small>
     </footer>
+
+  <!-- JS to load-->
+    <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <!-- Initialize wow.js settings -->
+    <script type="text/javascript">
+    var wow = new WOW(
+      {
+        boxClass:     'wow',      // animated element css class (default is wow)
+        animateClass: 'animated', // animation css class (default is animated)
+        offset:       100,          // distance to the element when triggering the animation (default is 0)
+        mobile:       true,       // trigger animations on mobile devices (default is true)
+        live:         true        // act on asynchronously loaded content (default is true)
+      }
+    );
+    wow.init();
+    </script>
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>
