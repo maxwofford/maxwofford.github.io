@@ -100,3 +100,10 @@ body {
   -moz-animation-delay: 0.2s; 
   animation-delay: 0.2s;
 }
+.doge {
+  background: #622e0b;
+}
+.deal-with-it-container {
+  background-image: url(../img/doge-bg.png);
+  background-repeat: no-repeat;
+}
