@@ -103,7 +103,9 @@ body {
 .doge {
   background: #622e0b;
 }
+
 .deal-with-it-container {
   background-image: url(../img/doge-bg.png);
   background-repeat: no-repeat;
+  float: left;
 }
