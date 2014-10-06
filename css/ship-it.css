@@ -1,0 +1,119 @@
+.top-title {
+  background: black;
+}
+
+.top-title,h1 {
+  font-size: 3em;
+}
+
+.panel {
+  margin: 0px;
+  border-radius: 0px;
+  position: relative;
+}
+
+.fixed {
+  position: fixed;
+  z-index: 2;
+}
+
+/*Calendar symbol*/
+
+.calendar {
+  border-radius: 1em;
+  width: 4.5em;
+  height: 5em;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.calendar-title {
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px; 
+  background: #D9383C;
+}
+
+.day-number {
+  border-bottom-left-radius: 13px;
+  border-bottom-right-radius: 13px; 
+  background: white;
+  font-size: 2em;
+  color: #15181F;
+  box-shadow: 0 3px 0 #15181f;
+}
+
+.level {
+  width: 100%;
+  padding: 5%;
+}
+
+a {
+  color: white;
+  text-shadow: 0px 0px 5px rgba(150, 150, 150, 1);
+}
+
+a:hover {
+  text-decoration: none;
+  color: white;
+  text-shadow: 0px 0px 12px rgba(255, 255, 255, 1);
+}
+
+article {
+  border-radius: 1em;
+  background: rgba(0,0,0,0.2);
+}
+
+/*Day specific*/
+.day-1 {
+  /*background: rgb(191, 116, 55);*/
+  /*background: #36A3D0;*/
+  background: #9F2B27;
+}
+
+.sticky-note {
+  font-family: 'Just Another Hand', cursive, Helvetica, sans-serif;
+  font-size: 3em;
+  height: 250px;
+  width: 250px;
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  -webkit-transform: rotate(9deg);
+  margin-right: auto;
+  margin-left: auto;
+  color: rgba(0,0,0,0.7);
+  background-color: #FEF788;
+  background-image: linear-gradient(#FFF890, #F8EA6D);  
+}
+
+.sticky-note:hover {
+  -webkit-transform: rotate(7deg);
+  -webkit-transform: scale(1.1);
+  box-shadow: 12px 12px 7px rgba(33,33,33,.7);
+}
+
+.day-2 {
+  background: #F2A51F;
+}
+
+.day-2 input {
+  background: rgba(255,255,255,0.2);
+  border: none;
+  font-size: 1.5em;
+}
+
+.mock-page {
+  background: #1D1C1A;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em; 
+  padding-bottom: 3em;
+  margin-top: 12%;
+}
+
+.day-3 {
+  background: #1E98D3;
+}
+
+.day-3 article {
+  margin-left: 15%;
+  margin-top: 10%; 
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Max Wofford</title>
+    <!--Resources-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/ship-it.css">
+    <link href="http://fonts.googleapis.com/css?family=Just+Another+Hand" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="panel fixed">
+      <a href="https://github.com/MaxWofford"><img class="social" src="img/icon/github.png"></a><br>
+      <a href="mailto:max.speed.wofford@gmail.com"><img class="social" src="img/icon/gmail.png"></a><br>
+      <a href="#"><img class="social" src="img/icon/linkedin.png"></a><br>
+      <a href="#"><img class="social" src="img/icon/facebook.png"></a><br>
+    </div>
+      <div class="contaner-fluid">
+        <div class="panel text-center top-title">
+          <h1><em><strong>F**K IT</strong></em></h1>
+          <h1><em><strong>SHIP IT</strong></em></h1>
+          <h2><small>Or: <br>
+          How<br> I Learned<br> To<br> Stop<br> Worrying<br> And<br> Love<br> MVP</small></h2>
+        </div>
+        <div class="panel level text-center">
+          <h1>I want to become a <span id="updating-input"></span></h1>
+          <br>
+          <h3>...so I'm shipping one new thing per day to meet my self-expectations.</h3>
+        </div>
+        <div class="panel day-1 text-center">
+          <div class="calendar text-center">
+            <div class="calendar-title">• Day •</div>
+            <div class="day-number"></div>
+          </div>
+
+          <div class="container row">
+          <br>
+            <div class="col-md-6">
+              <div class="sticky-note">I care about...</div>
+            </div>
+            <div class="col-md-6">
+              <article>
+                <h1><a href="http://care.jonl.org/">The Care Wall</a></h1>
+                <p>This is an explination of the care wall</p>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel day-2 text-center">
+          <div class="calendar text-center">
+            <div class="calendar-title">• Day •</div>
+            <div class="day-number"></div>
+          </div>
+          <div class="container row">
+          <br>
+            <div class="col-md-8 col-md-offset-3">
+              <div class="mock-page">
+                <article><h1><a href="http://www.startupwow.com/">StartupWow</a></h1></article>
+                <br>
+                <h3>What would you buy for Ðogecoin?</h3>
+                <br>
+                <input id="startupwow-input" type="text">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel day-3 text-center">
+          <div class="calendar text-center">
+            <div class="calendar-title">• Day •</div>
+            <div class="day-number"></div>
+          </div>
+          <div class="container row">
+          <br>
+            <div class="col-md-6">
+               <article>
+                <h1><a href="http://fitshipit.strikingly.com/">F**K IT SHIP IT CALENDAR</a></h1>
+                <h3>The page you are on right now was inspired by a great blog post promoting MVP.</h3>
+              </article>
+            </div>
+            <div class="col-md-6">
+              <img src="img/ship.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    <footer>
+      <small>Designed with ♥ using <a href="https://daneden.github.io/animate.css/">animate.css</a>, <a href="http://mynameismatthieu.com/WOW/">wow.js</a></small>
+    </footer>
+
+  <!-- JS to load-->
+    <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+    <script src="js/jquery.autosize.input.min.js"></script>
+    <script src="js/typed.min.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        $("#updating-input").typed({
+          strings: ["better programmer^3000", "better designer^3000", "fast prototyper^3000", "full-stack unicorn^3000"],
+          typeSpeed: 10,
+          loop: true
+        });
+        $("#startupwow-input").typed({
+          strings: ["Steam games^3000", "Account subscriptions^3000", "Web design services^3000", "World peace^3000"],
+          typeSpeed: 10,
+          loop: true
+        });
+      });
+    </script>
+
+    <script src="js/wow.min.js"></script>
+    <!-- Initialize wow.js settings -->
+    <script type="text/javascript">
+    var wow = new WOW(
+      {
+        boxClass:     'wow',
+        animateClass: 'animated',
+        offset:       100,
+        mobile:       true,
+        live:         true
+      }
+    );
+    wow.init();
+    </script>
+    <script type="text/javascript" src="js/ship-it.js"></script>
+  </body>
+</html>
