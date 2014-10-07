@@ -21,8 +21,9 @@
         <div class="panel text-center top-title">
           <h1><em><strong>F**K IT</strong></em></h1>
           <h1><em><strong>SHIP IT</strong></em></h1>
-          <h2><small>Or: <br>
-          How<br> I Learned<br> To<br> Stop<br> Worrying<br> And<br> Love<br> MVP</small></h2>
+          <br>
+          <h2>A visual calendar of everything I build for 30 days</h2>
+          <h2><small>Inspired by a <a href="http://fitshipit.strikingly.com/">blog post</a></small></h2>
         </div>
         <div class="panel level text-center">
           <h1>I want to become a <span id="updating-input"></span></h1>
@@ -38,7 +39,7 @@
           <div class="container row">
           <br>
             <div class="col-md-6">
-              <div class="sticky-note">I care about...</div>
+              <div class="sticky-note"><textarea>I care about...</textarea></div>
             </div>
             <div class="col-md-6">
               <article>
@@ -62,7 +63,7 @@
                 <br>
                 <h3>What would you buy for Ðogecoin?</h3>
                 <br>
-                <input id="startupwow-input" type="text">
+                <span id="startupwow-input" class="text-center" data-autosize-input='{ "space": 40 }' ></span>
               </div>
             </div>
           </div>
@@ -78,7 +79,7 @@
             <div class="col-md-6">
                <article>
                 <h1><a href="http://fitshipit.strikingly.com/">F**K IT SHIP IT CALENDAR</a></h1>
-                <h3>The page you are on right now was inspired by a great blog post promoting MVP.</h3>
+                <h3>This website was built on day 3 of the challenge.</h3>
               </article>
             </div>
             <div class="col-md-6">
@@ -98,7 +99,7 @@
     <script type="text/javascript">
       $(function(){
         $("#updating-input").typed({
-          strings: ["better programmer^3000", "better designer^3000", "fast prototyper^3000", "full-stack unicorn^3000"],
+          strings: ["better programmer^3000", "better designer^3000", "faster prototyper^3000", "full-stack unicorn^3000"],
           typeSpeed: 10,
           loop: true
         });
@@ -108,6 +109,7 @@
           loop: true
         });
       });
+      $('#startupwow-input').autosizeInput()
     </script>
 
     <script src="js/wow.min.js"></script>
