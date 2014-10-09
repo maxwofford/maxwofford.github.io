@@ -137,14 +137,14 @@ article {
   background: #1B2827;
 }
 
-.day-4 .row {
+.day-4 .row, .day-4 a {
   color: rgb(189, 222, 202);
   font-family: "Courier New", Courier, monospace;
   text-shadow: #354E37 -2px 0px 0px, #76C17C -1px 0px 3px, #2D7531 1px 0px 4px;
 }
 
-.day-4 a {
-  text-shadow: #354E37 -2px 0px 0px, #76C17C -1px 0px 3px, #2D7531 1px 0px 4px; 
+.day-4 a:hover {
+  text-shadow: #354E37 -2px 0px 0px, #76C17C -1px 0px 8px, #2D7531 1px 0px 10px;
 }
 
 .game-cursor{
