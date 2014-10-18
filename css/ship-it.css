@@ -41,6 +41,11 @@ article {
   padding: 1em;
 }
 
+.panel.padded {
+  padding: 5em;
+
+}
+
 /*Day specific*/
 .day-1 {
   /*background: rgb(191, 116, 55);*/
@@ -85,7 +90,7 @@ article {
   background: white;
   font-size: 2em;
   color: #15181F;
-  box-shadow: 0 3px 0 #15181f;
+  box-shadow: 0 3px 0 rgba(21, 24, 31, 0.5);
 }
 
 .sticky-note:hover {
@@ -193,4 +198,9 @@ article {
 
 .day-6 {
   background: #93C251;
+}
+
+.day-7 {
+  background: #5A83ED;
+  color: white;
 }
