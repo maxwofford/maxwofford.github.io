@@ -177,6 +177,7 @@ article {
 .day-5 {
   background: #9F2B27;
   color: black;
+  word-wrap: break-word;
 }
 
 .day-5 article {
