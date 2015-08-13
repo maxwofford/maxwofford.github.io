@@ -5,6 +5,7 @@ body {
   background-repeat: repeat;
 }
 .panel { /*This class will be used for templating the site*/
+  z-index: 999;
   border: 1px solid rgba(255,255,255,0.2);;
   color: #eee;
   background-color: rgba(0,0,0,0.2);
@@ -22,11 +23,6 @@ body {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
-}
-.selection-box {
-  background-image: url(../img/borderBox.png);
-  background-repeat: no-repeat;
-  background-size: 100% auto;
 }
 .banner {
   text-align: center;
