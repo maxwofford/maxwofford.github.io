@@ -40,7 +40,7 @@ h2 {
   font-size: 1.2em;
   margin: 0 0 6px 0;
 }
-.date-holder {
+dd h2, li {
   position: relative;
 }
 .date {
