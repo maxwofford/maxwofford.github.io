@@ -66,9 +66,9 @@ br {
 }
 
 a {
-  color: #999;
+  color: #6d6d6d;
   text-decoration: none;
-  border-bottom: 1px dotted #999;
+  border-bottom: 1px dotted #6d6d6d;
 }
 
 a:hover {
