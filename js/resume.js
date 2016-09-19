@@ -41,6 +41,14 @@ let Step = function() {
     this.cells = this.cells.concat(cells).unique()
   }
 
+  this.killDistantCells = function() {
+    this.cells.filter((cell) => {
+      let x = parseInt(cell.split(':')[0])
+      let y = parseInt(cell.split(':')[1])
+      return !(Math.abs(x) > windowWidth / size || Math.abs(y) > windowHeight / size)
+    })
+  }
+
   this.getSurvivingCells = function() {
     return this.cells.filter((cell) => {
       let x = cell.split(':')[0]
@@ -132,6 +140,7 @@ function draw() {
   let futureStep = new Step()
   futureStep.addCells(survivingCells)
   futureStep.addCells(newCells)
+  futureStep.killDistantCells()
 
   // Step forward a generation
   currentStep = futureStep
