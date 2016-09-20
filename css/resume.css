@@ -22,16 +22,15 @@ https://css-tricks.com/examples/OnePageResume/index.html */
 
 h1 {
   margin: 0 0 16px 0;
-  padding: 0 0 16px 0;
   font-size: 42px;
   font-weight: bold;
   font-family: "Open Sans", "Helvetica Neue", Roboto, Arial;
-  border-bottom: 1px solid #999;
   position: relative;
 }
 
 .contact-info {
   position: absolute;
+  transform: translateY(50%);
   bottom: 50%;
   right: 0;
   font-style: italic;
@@ -44,6 +43,19 @@ h1 {
 h2 {
   font-size: 1.2em;
   margin: 0 0 6px 0;
+}
+
+h2.subheader {
+  margin: 0 0 16px 0;
+  padding: 0 0 16px 0;
+}
+
+p.subheader {
+  margin-bottom: 12px;
+}
+
+.subheader {
+  color: #6d6d6d;
 }
 
 dd h2, li {
@@ -63,6 +75,10 @@ dd h2, li {
 
 br {
   line-height: 2em;
+}
+
+hr {
+  margin-bottom: 2em;
 }
 
 a {
