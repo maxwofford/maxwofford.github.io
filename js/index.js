@@ -18,12 +18,16 @@ function loadContent(arg) {
     const el = document.createElement('div')
     el.id = 'injected-content'
     document.body.appendChild(el)
-    const p = document.createElement('p')
-    p.innerHTML = "Hello there, here's your cookie 🍪"
-    el.appendChild(p)
-    const cookie = document.createElement('p')
-    cookie.innerHTML = `lookingGlass=${new Date().getTime()}`
-    el.appendChild(cookie)
+
+    const addMessage = msg => {
+      const p = document.createElement('p')
+      p.innerHTML = msg
+      el.appendChild(p)
+    }
+
+    addMessage("Hello there, here's your cookie 🍪")
+    addMessage(`lookingGlass=${new Date().getTime()}`)
+    addMessage("Please stand by, further instructions pending")
   } else {
     document.getElementById('injected-content').remove()
   }
@@ -43,12 +47,16 @@ function setConsoleState(consoleState) {
 }
 
 function checkLoop() {
-    let open = false
-    const div = document.createElement('div')
-    Object.defineProperty(div, "id", {get: () => { open = true }})
-    console.log(div, 'Sorry for the spam')
-    setConsoleState(open)
-    setTimeout(checkLoop, 200)
+  const devtools = /./;
+  let open = false
+  devtools.toString = function() {
+    open = true;
+  }
+
+  console.log('%c', devtools)
+  const isFF = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
+  setConsoleState(!isFF && open)
+  setTimeout(checkLoop, 200)
 }
 
 document.addEventListener("DOMContentLoaded", function(event) {
