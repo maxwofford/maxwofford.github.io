@@ -1,7 +1,7 @@
 'use strict'
 
-function loadCss(arg) {
-  if (arg) {
+function loadCss(consoleOpen) {
+  if (consoleOpen) {
     const el = document.createElement('link')
     el.setAttribute('href', 'css/index.css')
     el.setAttribute('rel', 'stylesheet')
@@ -13,8 +13,8 @@ function loadCss(arg) {
   }
 }
 
-function loadContent(arg) {
-  if (arg) {
+function loadContent(consoleOpen) {
+  if (consoleOpen) {
     const el = document.createElement('div')
     el.id = 'injected-content'
     document.body.appendChild(el)
@@ -33,10 +33,10 @@ function loadContent(arg) {
   }
 }
 
-function convertPage(arg = true) {
-  loadCss(arg)
-  document.title = arg ? '🏆' : 'MSW'
-  loadContent(arg)
+function convertPage(consoleOpen = true) {
+  loadCss(consoleOpen)
+  document.title = consoleOpen ? '🏆' : 'Max Wofford'
+  loadContent(consoleOpen)
 }
 
 function setConsoleState(consoleState) {
