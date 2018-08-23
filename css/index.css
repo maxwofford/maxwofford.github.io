@@ -30,6 +30,10 @@ a {
   text-align: left;
   animation: cursor 3s infinite ease-in-out;
 }
+.glitch:hover, .glitch:hover:before, .glitch:hover:after {
+  font-weight: normal;
+  text-decoration: underline;
+}
 .glitch:before, .glitch:after {
   content: "Hack Club";
   position: absolute;
@@ -42,12 +46,12 @@ a {
 }
 .glitch:before {
   left: 2px;
-  text-shadow: -1px 0 #60ff14;
+  text-shadow: -1px 0 red;
   animation: animation1 2s infinite linear alternate-reverse;
 }
 .glitch:after {
   left: -2px;
-  text-shadow: -1px 0 #d63de4;
+  text-shadow: -1px 0 green;
   animation: animation2 4s infinite linear alternate-reverse;
 }
 
