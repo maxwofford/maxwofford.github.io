@@ -23,11 +23,17 @@ function loadContent(consoleOpen) {
       const p = document.createElement('p')
       p.innerHTML = msg
       el.appendChild(p)
+      return p
     }
 
-    addMessage("Hello there, here's your cookie 🍪")
-    addMessage(`lookingGlass=${new Date().getTime()}`)
-    addMessage("Please stand by, further instructions pending")
+    addMessage("glad you found me.")
+    const wrapper = addMessage("I work at ")
+    const glitch = document.createElement('p')
+    glitch.innerHTML = 'Hack Club'
+    wrapper.appendChild(glitch)
+    glitch.className = 'glitch'
+    glitch.onclick = () => location.href = 'https://hackclub.com?ref=maxwofford'
+    addMessage("reach out to me sometime")
   } else {
     document.getElementById('injected-content').remove()
   }
