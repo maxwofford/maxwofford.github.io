@@ -115,13 +115,28 @@ function setConsoleState(consoleState) {
   }
 }
 
+function isConsoleOpen() {
+  let isOpen = false
+  const devtools = /./
+  devtools.toString = function() {
+    isOpen = true
+  }
+  console.log('%c', devtools)
+
+  // this detection method gives a false positive in Firefox
+  // therefore it uses an alternative (and less accurate) method for FF
+  if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1)
+    isOpen = window.devtools.open
+  return isOpen
+}
+
 function checkLoop() {
-  setConsoleState(window.devtools.open)
+  setConsoleState(isConsoleOpen())
   setTimeout(checkLoop, 200)
 }
 
 document.addEventListener('DOMContentLoaded', function(event) {
   window.consoleState = false
-  window.initialDetectedState = window.devtools.open
+  window.initialDetectedState = isConsoleOpen()
   checkLoop()
 })
