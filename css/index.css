@@ -32,8 +32,8 @@ p, ul {
 }
 
 .avatar {
-  border-radius: 50%;
-  width: 5em;
+  border-radius: 25%;
+  width: 10em;
   margin: 1em;
 }
 
