@@ -41,6 +41,11 @@ p, ul {
   text-align: center;
 }
 
+.online-presence a {
+  display: inline-block;
+  margin: 0.25em 0.125em;
+}
+
 .online-presence ul {
   padding: 0;
 }
