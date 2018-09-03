@@ -65,7 +65,7 @@
 function loadCss(consoleOpen) {
   if (consoleOpen) {
     const el = document.createElement('link')
-    el.setAttribute('href', 'css/index.css')
+    el.setAttribute('href', 'css/injected.css')
     el.setAttribute('rel', 'stylesheet')
     el.setAttribute('type', 'text/css')
     el.setAttribute('id', 'injected-stylesheet')
@@ -131,6 +131,10 @@ function isConsoleOpen() {
 }
 
 function checkLoop() {
+  // This flag is for disabling the easter egg in development
+  if (window.location.hash === '#dev') {
+    return
+  }
   setConsoleState(isConsoleOpen())
   setTimeout(checkLoop, 200)
 }
