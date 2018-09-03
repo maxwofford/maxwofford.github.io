@@ -14,7 +14,6 @@ a {
 
 h1, h2, h3, h4, h5 {
   font-family: serif;
-
   margin: 0;
 }
 
@@ -22,14 +21,14 @@ p, ul {
   margin: 0;
 }
 
-.print-only { display: none;}
+.print-only { display: none; }
 @media print {
   .print-only { display: initial; }
 }
 
 .title {
   text-align: center;
-  margin-top: 2em;
+  padding-top: 2em;
 }
 
 .avatar {
