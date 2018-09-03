@@ -61,18 +61,3 @@ p, ul {
 .summary p {
   margin-bottom: 1em;
 }
-
-/* .project-list {
-  position: relative;
-}
-
-.project-list::before {
-  content: '';
-  pointer-events: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9));
-} */
