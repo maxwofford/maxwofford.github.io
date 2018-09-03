@@ -55,6 +55,8 @@ p, ul {
   max-width: 32em;
   text-align: center;
   margin: 1em auto;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .summary p {
