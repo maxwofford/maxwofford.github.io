@@ -132,11 +132,17 @@ function isConsoleOpen() {
 
 function checkLoop() {
   // This flag is for disabling the easter egg in development
-  if (window.location.hash === '#dev') {
-    return
+  switch (window.location.hash) {
+    case '#disabled':
+      break
+    case '#enabled':
+      setConsoleState(true)
+      break
+    default:
+      setConsoleState(isConsoleOpen())
+      setTimeout(checkLoop, 200)
+      break
   }
-  setConsoleState(isConsoleOpen())
-  setTimeout(checkLoop, 200)
 }
 
 document.addEventListener('DOMContentLoaded', function(event) {
