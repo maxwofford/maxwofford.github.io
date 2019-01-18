@@ -102,10 +102,47 @@ function loadContent(consoleOpen) {
   }
 }
 
+const animationArray = [
+  ["\\", '|', '/', '-'],
+  ["1", '2', '3', '4', '5', '6', '7'],
+  ["\\", '|', '/', '-']
+]
+var commentInterval
+var commentArray = []
+commentArray = animationArray.map(_ => document.createComment(''))
+
+function loadComment(consoleOpen) {
+  if (consoleOpen) {
+    if (!commentInterval) {
+      commentArray.forEach(comment => document.prepend(comment))
+
+      var count = 0
+      commentInterval = setInterval(() => {
+        /* animated comment code */
+        commentArray.forEach((comment, index) => {
+          const animation = animationArray[index]
+          comment.textContent = animation[count % animation.length]
+        })
+        count++
+      }, 2000)
+    }
+  } else {
+    console.log('cleared interval #', commentInterval)
+    clearInterval(commentInterval)
+    commentInterval = null
+    commentArray.forEach(comment => {
+      comment.textContent = ''
+      comment.remove()
+    })
+    console.log('deleted comments')
+  }
+}
+
 function convertPage(consoleOpen = true) {
   loadCss(consoleOpen)
   document.title = consoleOpen ? '🏆' : 'Max Wofford'
   loadContent(consoleOpen)
+  loadComment(consoleOpen)
 }
 
 function setConsoleState(consoleState) {
