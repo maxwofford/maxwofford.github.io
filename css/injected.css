@@ -20,7 +20,7 @@ a {
   color: #ccc;
   text-decoration: none;
   position: relative;
-  font-size: 3em;
+  font-size: 1em;
   font-weight: bold;
   word-spacing: -0.375em;
   display: inline-block;
@@ -32,7 +32,7 @@ a {
   text-decoration: underline;
 }
 .glitch:before, .glitch:after {
-  content: "Hack Club";
+  content: "max@maxwofford.com";
   position: absolute;
   background: #303039;
   width: 100%;

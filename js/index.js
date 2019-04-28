@@ -32,14 +32,10 @@ function loadContent(consoleOpen) {
     }
 
     addMessage('glad you found me.')
-    const wrapper = addMessage("I'm working on ")
-    const glitch = document.createElement('p')
-    glitch.innerHTML = 'Hack Club'
-    wrapper.appendChild(glitch)
+    addMessage("near san francisco? i'd love to chat in meatspace.")
+    addMessage("just message me and we'll find a time and place to talk over coffee.")
+    const glitch = addMessage("meet@maxwofford.com")
     glitch.className = 'glitch'
-    glitch.onclick = () =>
-      (location.href = 'https://hackclub.com?ref=maxwofford')
-    addMessage('please, reach out.')
   } else {
     document.getElementById('injected-content').remove()
   }
