@@ -1,66 +1,9 @@
 'use strict'
 
-/*!
-	devtools-detect
-	Detect if DevTools is open
-	https://github.com/sindresorhus/devtools-detect
-	by Sindre Sorhus
-	MIT License
-*/
-;(function() {
-  'use strict'
-  var devtools = {
-    open: false,
-    orientation: null
-  }
-  var threshold = 160
-  var emitEvent = function(state, orientation) {
-    window.dispatchEvent(
-      new CustomEvent('devtoolschange', {
-        detail: {
-          open: state,
-          orientation: orientation
-        }
-      })
-    )
-  }
-
-  setInterval(function() {
-    var widthThreshold = window.outerWidth - window.innerWidth > threshold
-    var heightThreshold = window.outerHeight - window.innerHeight > threshold
-    var orientation = widthThreshold ? 'vertical' : 'horizontal'
-
-    if (
-      !(heightThreshold && widthThreshold) &&
-      ((window.Firebug &&
-        window.Firebug.chrome &&
-        window.Firebug.chrome.isInitialized) ||
-        widthThreshold ||
-        heightThreshold)
-    ) {
-      if (!devtools.open || devtools.orientation !== orientation) {
-        emitEvent(true, orientation)
-      }
-
-      devtools.open = true
-      devtools.orientation = orientation
-    } else {
-      if (devtools.open) {
-        emitEvent(false, null)
-      }
-
-      devtools.open = false
-      devtools.orientation = null
-    }
-  }, 500)
-
-  if (typeof module !== 'undefined' && module.exports) {
-    module.exports = devtools
-  } else {
-    window.devtools = devtools
-  }
-})()
-/* END DEVTOOLS-DETECT */
+// Could do cool things with this later. May as well start saving it now
+if (!localStorage.getItem('firstContact')) {
+  localStorage.setItem('firstContact', Date.now())
+}
 
 function loadCss(consoleOpen) {
   if (consoleOpen) {
@@ -145,8 +88,16 @@ function checkLoop() {
   }
 }
 
-document.addEventListener('DOMContentLoaded', function(event) {
+document.addEventListener('DOMContentLoaded', function() {
   window.consoleState = false
   window.initialDetectedState = isConsoleOpen()
   checkLoop()
+
+  document.querySelector("#title-name").addEventListener("keydown", function (e) {
+    if (e.key === 'Enter' && e.target.innerText.trim() != '') {
+      document.querySelector("#title-name")
+      localStorage.setItem('username', e.target.innerText.trim())
+      window.location.href = 'looking-glass'
+    }
+  }, false)
 })
