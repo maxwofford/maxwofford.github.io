@@ -102,4 +102,11 @@ document.addEventListener('DOMContentLoaded', function() {
       window.location.href = 'looking-glass'
     }
   }, false)
+
+  const oldComment = document.childNodes[0]
+  if (oldComment.nodeName === '#comment') {
+    oldComment.remove()
+  }
+  const newComment = document.createComment('Welcome!')
+  document.querySelector('.this-element').appendChild(newComment)
 })
