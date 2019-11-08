@@ -56,16 +56,22 @@ function setConsoleState(consoleState) {
 
 function isConsoleOpen() {
   let isOpen = false
-  const devtools = /./
-  devtools.toString = function() {
-    isOpen = true
-  }
-  console.log('%c', devtools)
 
-  // this detection method gives a false positive in Firefox
-  // therefore it uses an alternative (and less accurate) method for FF
-  if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1)
-    isOpen = window.devtools.open
+  const ua = navigator.userAgent.toLowerCase()
+  if (ua.indexOf('firefox') > -1 || ua.indexOf('chrome') > -1) {
+    // this detection method gives a false positive in Firefox
+    // therefore it uses an alternative (and less accurate) method for FF
+
+    // update: chrome has since patched the toString hack used to detect
+    // devtools, so we're falling back on dev-detect if the user is on chrome
+    isOpen = window.devtools.isOpen
+  } else {
+    const devtools = /./
+    devtools.toString = function() {
+      isOpen = true
+    }
+    console.log('%c', devtools)
+  }
   return isOpen
 }
 
