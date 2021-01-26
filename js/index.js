@@ -32,7 +32,7 @@ function loadContent(consoleOpen) {
     }
 
     addMessage('glad you found me.')
-    addMessage("near san francisco? i'd love to chat in meatspace.")
+    addMessage("in vermont? i'd love to chat irl.")
     addMessage("just message me and we'll find a time and place to talk over coffee.")
     const glitch = addMessage("meet@maxwofford.com")
     glitch.className = 'glitch'
