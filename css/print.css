@@ -1,0 +1,15 @@
+/* print media selector */
+
+@media print {
+  #site-content {
+    display: none;
+  }
+  body::before {
+    content: url('https://hc-cdn.hel1.your-objectstorage.com/s/v3/3445fa659c637600ea8e4a6299b852cc22202077_screenshot_2025-08-06_at_13.17.36.png');
+  }
+  body::after {
+    content: "hello there printer";
+    font-size: 3em;
+    text-align: center;
+  }
+}
